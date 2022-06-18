@@ -1,0 +1,89 @@
+
+.wrapper{
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.title-charts{
+    font-size: 34px;
+}
+
+.charts-div{
+    height: 500px;
+    width: 50%;
+
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-right: 1%;
+    padding-left: 1%;
+    
+
+}
+
+.charts-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-basis: 50%;
+    padding: 1%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-basis: 50%;
+    padding: 1%;
+}
+
+.info{
+    align-self: center;
+}
+
+.Espacio {
+    height: 70px;
+}
+
+.Border {
+    width: 100%;
+    height: 30px;
+    background-color: #009faf;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 70px;
+    background-color: #4dd0e1;
+}
+
+.MenuTitle {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+

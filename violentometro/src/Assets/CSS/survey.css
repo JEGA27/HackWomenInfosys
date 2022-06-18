@@ -1,0 +1,122 @@
+
+  body {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Verdana", cursive, sans-serif;
+    
+  }
+
+  
+  
+  .question-section {
+    width: 100%;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-top: 10%;
+  }
+  
+  .question-count {
+    margin-bottom: 28px;
+    color:#007984;
+  }
+  
+  .question-count span {
+    font-size: 28px;
+    color:#007984;
+    text-align: center;
+  }
+  
+  .question-text {
+    color:#007984;
+    font-size: 18px;
+    justify-content:center ;
+
+  }
+  
+  .answer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    justify-content:space-evenly;
+    
+
+  }
+  
+  button {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4dd0e1;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #009faf;
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    background-color: #009faf;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button svg {
+    margin-right: 5px;
+  }
+
+  .survey{
+    background-color: rgb(99, 233, 233);
+    width: 700px;
+    min-height: 400px;
+    height: min-content;
+    border-radius: 15px;
+    padding: 0px;
+    box-shadow: 5px 5px 5px 5px rgba(64, 64, 64, 0.75);
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    
+
+  
+  }
+
+ .izq{
+    background-color: #007984;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    
+ }
+
+ .survey ,h1{
+   font-size: 20px;
+   text-align: center;
+
+ }
+
+ .survey, h2{
+    font-size: 15px;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+    color: #ffffff;
+ }
+ image{
+  height:min-content
+ }

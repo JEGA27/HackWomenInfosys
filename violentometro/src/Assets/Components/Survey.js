@@ -3,6 +3,7 @@ import '../CSS/survey.css';
 import {db} from '../../firebase'
 import {collection, addDoc, Timestamp} from 'firebase/firestore'
 import { useNavigate } from 'react-router-dom';
+import wave from "../../images/Wave.gif"
 export default function Survey(){
    
     const questions = [
@@ -161,32 +162,35 @@ export default function Survey(){
 
 	return (
         
-		<div className='survey'>
-			{showScore ? (
-				<div className='score-section'>
-				</div>
-			) : (
-				<>
-                <div className='izq'>
-               <h1>Violentómetro</h1>
-               <h2>Si hay violencia en la pareja, no hay amor.</h2>
-               <img src={require("../Images/imagen.png")} alt="Foto" />
-                </div>
-					<div className='question-section'>
-						<div className='question-count'>
-							<span> Pregunta {currentQuestion + 1}</span>/{questions.length}
-						</div>
-						<div className='question-text'>{questions[currentQuestion].questionText}</div>
-					</div>
-					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption) => (
-							<button onClick={() => handleAnswerOptionClick(answerOption.isPoint)}>{answerOption.answerText}</button>
-						))}
-					</div>
-				</>
-			)}
+        <div className='s-div'>
+            <div className='survey'>
+                {showScore ? (
+                    <div className='score-section'>
+                    </div>
+                ) : (
+                    <>
+                    <div className='izq'>
+                <h1>Violentómetro</h1>
+                <h2>Si hay violencia en la pareja, no hay amor.</h2>
+                <img src={require("../Images/imagen.png")} alt="Foto" />
+                    </div>
+                        <div className='question-section'>
+                            <div className='question-count'>
+                                <span> Pregunta {currentQuestion + 1}</span>/{questions.length}
+                            </div>
+                            <div className='question-text'>{questions[currentQuestion].questionText}</div>
+                        </div>
+                        <div className='answer-section'>
+                            {questions[currentQuestion].answerOptions.map((answerOption) => (
+                                <button onClick={() => handleAnswerOptionClick(answerOption.isPoint)}>{answerOption.answerText}</button>
+                            ))}
+                        </div>
+                    </>
+                )}
+		    </div>
             
-		</div>
+        </div>
+		
         
 	);
 }

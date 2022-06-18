@@ -5,8 +5,31 @@
     justify-content: center;
     align-items: center;
     font-family: "Verdana", cursive, sans-serif;
-    
+  
   }
+
+  .s-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(-45deg, #944de1, #62e3c5, #0cace7, #5bbedf);
+	  background-size: 400% 400%;
+	  animation: gradient 15s ease infinite;
+    width: 100vw;
+	  height: 100vh;
+  }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
   
   
@@ -87,9 +110,12 @@
     justify-content: center;
     margin-top: 250px;
     
+    
 
   
   }
+
+
 
  .izq{
     background-color: #007984;
@@ -120,3 +146,5 @@
  image{
   height:min-content
  }
+
+ 
